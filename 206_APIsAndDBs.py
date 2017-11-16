@@ -90,7 +90,7 @@ curs = conn.cursor()
 def unique(x, y): #help to determine if an entry is unique
 	for tup in y:
 		if x[0] == tup[0]: #comparing user_id for proposed unique tuple
-			return False   #against each of the preexisting user_ids
+			return False   #against each of the preexisting user_ids 
 	return True
 
 curs.execute('DROP TABLE IF EXISTS Users') #create users table
